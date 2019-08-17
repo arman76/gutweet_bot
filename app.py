@@ -179,7 +179,7 @@ def get_contact(bot, update):
 
 def main():
     # Create the Updater and pass it your bot's token.
-    updater = Updater("678364045:AAF-Ay4fEJxHHGd_LAH6BLrqPcQ_rdiu2C0")
+    updater = Updater("")
 
     updater.dispatcher.add_handler(CommandHandler('start', start))
     updater.dispatcher.add_handler(CallbackQueryHandler(button))
