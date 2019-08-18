@@ -73,7 +73,7 @@ def send_any_message(bot, chat_id, message, reply_to_message_id, reply_markup=No
                                    reply_to_message_id=reply_to_message_id, reply_markup=reply_markup)
     elif message.voice is not None:
         text, parse_mode = text_with_parse_mode(message.caption, message.caption_entities)
-        return bot.send_voice(chat_id=chat_id, video=message.voice.file_id,
+        return bot.send_voice(chat_id=chat_id, voice=message.voice.file_id,
                               duration=message.voice.duration, caption=text,
                               reply_to_message_id=reply_to_message_id, reply_markup=reply_markup, parse_mode=parse_mode)
     elif message.venue is not None:
